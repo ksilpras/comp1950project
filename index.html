@@ -2,9 +2,154 @@
 <html>
 
 <head>
-    <!--#include file="inc/site_config.inc" -->
-    <!--#include file="inc/slide_reveal.shtml" -->
-    <title>comp1950 : intermediate web design and development</title>
+    <!-- Common declaration -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/projectstyle.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+
+    <!-- Java Script -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slidereveal.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            /*------*/
+            /* Menu */
+            /*------*/
+            $("#slidemenu").slideReveal({
+                trigger: $("#triggermenu"),
+                width: 500,
+                speed: 300,
+                position: "left",
+                push: false,
+                overlay: true,
+                overlayColor: "rgba(221, 221, 234, 0.8)",
+                top: 10,
+                autoEscape: true
+            });
+
+            $("#cancelmenu").click(function() {
+                $("#slidemenu").slideReveal("hide");
+            });
+
+
+            $("button[exercise-id]").click(function(event) {
+                //alert("button[excercise-id]");  
+                event.preventDefault();
+                var modalLocation = $(this).attr('exercise-id');
+                //alert(modalLocation);
+                $('#' + modalLocation).reveal($(this).data());
+            });
+
+
+            /*------*/
+            /* Quiz */
+            /*------*/
+            $("#slidequiz").slideReveal({
+                trigger: $("#triggerquiz"),
+                autoEscape: true,
+                width: 1280,
+                speed: 500,
+                top: 10,
+                position: "right"
+            });
+
+            $("#cancelquiz").click(function() {
+                $("#slidequiz").slideReveal("hide");
+            });
+
+            /*---------------------------------------*/
+            /* Dynamic load menu, exercise, and quiz */
+            /*---------------------------------------*/
+            $("a[menu-id]").click(function(event) {
+                $('#dynamicload').empty();
+                event.preventDefault();
+                var filepath = $(this).attr("href");
+                var value = $(this).attr("menu-id");
+                
+                var loadpage = filepath + " #" + value + " > *";
+                
+                $("#dynamicload").load(loadpage);
+
+                //reset active inactive here
+                $("#slidemenu div a").attr("class", "list-group-item");
+                $(this).attr("class", "list-group-item active");
+
+                // Hide slide menu after choose
+                $("#slidemenu").slideReveal("hide");
+
+                //Enable quiz and exercise button if lecture
+                if (value.indexOf("lecture") != -1) {
+                    $("#triggerquiz").attr("class", "btn btn-primary");
+                    $("#triggerexercise").attr("class", "btn btn-success");
+
+                    // Pre-load quiz page in advance using value variable
+                    loadpage = "quizs/" + (value + "_quiz.html #") + value + " > *";
+                    
+                    $('#dynamicquiz').empty();
+                    $("#dynamicquiz").load(loadpage);
+
+                    // Pre-load exercise
+                    loadpage = "exercises/" + (value + "_exercise.html #") + value + " > *";
+                    
+                    $('#dynamicexercise').empty();
+                    $('#dynamicexercise').load(loadpage);
+                } else {
+                    $("#triggerquiz").attr("class", "btn btn-primary disabled");
+                    $("#triggerexercise").attr("class", "btn btn-success disabled");
+                    $('#dynamicquiz').empty();
+                }
+            });
+        });
+
+    </script>
+
+    <div id="slidequiz">
+        <!-- h3 style="margin-left: 50px">Press <kbd>ESC</kbd> to exit the menu</h3 -->
+        <form class="form-horizontal" style="padding-left: 30px">
+            <div id="dynamicquiz">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1><span class="label label-default">Quiz1</span></h1>
+                    </div>
+                    <div class="panel-body" style="border-style:none">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: 20px">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <a class="btn btn-success" href="#" role="button">Submit your quiz</a>&nbsp;&nbsp;&nbsp;
+                    <button type="button" id="cancelquiz" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="slidemenu">
+        <!-- h3 style="margin-left: 50px">Press <kbd>ESC</kbd> to exit the menu</h3 -->
+        <div class="list-group" style="margin-left: 50px">
+            <a href="index.html" menu-id="dynamicload" class="list-group-item active">Home</a>
+            <a href="courseinfo/courseinfo.html" menu-id="courseinfo" class="list-group-item">About the course</a>
+            <a href="lectures/lecture1.html" menu-id="lecture1" class="list-group-item">Lecture 1 - HTML5</a>
+            <a href="lectures/lecture2.html" menu-id="lecture2" class="list-group-item">Lecture 2 - CSS Technique</a>
+            <a href="lectures/lecture3.html" menu-id="lecture3" class="list-group-item">Lecture 3 - CSS Layout</a>
+            <a href="lectures/lecture4.html" menu-id="lecture4" class="list-group-item">Lecture 4 - Responsive CSS</a>
+            <a href="lectures/lecture5.html" menu-id="lecture5" class="list-group-item">Lecture 5 - CSS3</a>
+            <a href="lectures/lecture6.html" menu-id="lecture6" class="list-group-item">Lecture 6 - Javascript frameworks</a>
+            <a href="#" class="list-group-item">.....</a>
+            <button type="button" id="cancelmenu" class="btn btn-danger" style="margin-top: 20px">Cancel</button>
+        </div>
+    </div>
+    <title>Comp1950 : Home</title>
 </head>
 
 <body>
@@ -13,7 +158,7 @@
     <header>
         <div id="banner">
             <a name="top"></a>
-            <h5 style="color:white;">british columbia institute of technology</h5>
+            <h5 style="color:white;"><a href="http://validator.w3.org/check?uri=referer">british columbia institute of technology</a></h5>
         </div>
     </header>
     <main>
@@ -23,7 +168,7 @@
 
             </div>
         </div>
-        
+
         <!-- Tabs -->
         <div class="row topright">
             <button id='triggermenu' type="button" class="btn btn-primary">Display Menu</button>
@@ -34,7 +179,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h1><span class="label label-default">Course Description</span></h1>
-                </div> 
+                </div>
                 <div class="panel-body" style="border-style:none">
                     <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
                         <ul id="myTabs" class="nav nav-pills" role="tablist">
@@ -54,7 +199,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </main>
 </body>
 
