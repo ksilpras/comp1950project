@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="../../site_config.inc" -->
+    <!--#include virtual="../../slide_reveal.shtml" -->
+    <title>comp1950 : intermediate web design and development</title>
+</head>
+
+<body>
+
+    <!-- Banner goes here, Animated letters are here -->
+    <header>
+        <div id="banner">
+            <a name="top"></a>
+            <h5 style="color:white;">british columbia institute of technology</h5>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Tabs -->
+        <div id="lecture2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1><span class="label label-default">Lecture Two - CSS technique</span></h1>
+                </div>
+                <div class="panel-body">
+                    <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+                        <ul id="myTabs" class="nav nav-pills" role="tablist">
+
+                            <li role="presentation" class="active"><a href="#placetime" id="placetime-tab" role="tab" data-toggle="tab" aria-controls="placetime" aria-expanded="true">Agenda</a></li>
+
+                            <li role="presentation"><a href="#format" role="tab" id="format-tab" data-toggle="tab" aria-controls="format">Referencing CSS</a></li>
+
+                            <li role="presentation" class="dropdown"> <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Additional Topics<span class="caret"></span></a>
+
+                                <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                                    <li><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">Simplifying your CSS</a></li>
+                                    <li><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">CSS Selectors</a></li>
+                                    <li><a href="#dropdown3" role="tab" id="dropdown3-tab" data-toggle="tab" aria-controls="dropdown3">Rule Order &amp; Specificity</a></li>
+                                    <li><a href="#dropdown4" role="tab" id="dropdown4-tab" data-toggle="tab" aria-controls="dropdown4">CSS Measurements</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <div role="tabpanel" class="tab-pane threecolumn fade in active" id="placetime" aria-labelledby="placetime-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus commodo ante, nec cursus ipsum elementum bibendum. Phasellus condimentum, eros quis vehicula lacinia, eros elit dictum urna, at fermentum neque enim id felis. Sed in ultrices risus. Etiam eu metus maximus, rhoncus orci sodales, consequat ex. Sed sit amet lacus sagittis, dapibus nulla nec, molestie magna. Curabitur suscipit sed mauris sed tempor. Aliquam pretium non dui vel imperdiet. Nullam sagittis lectus eu turpis sagittis, eget vestibulum est pulvinar. Sed semper orci in dui maximus congue. Praesent consectetur libero non mi pretium, tristique molestie metus consectetur. Pellentesque sed viverra urna.</p>
+
+                                <p>Sed sagittis elit dui, non sagittis lorem posuere vel. Etiam porta turpis egestas tellus tempor, sed cursus metus scelerisque. Praesent eget feugiat erat. Aliquam sed felis aliquet mi imperdiet rutrum. Mauris vel mi magna. Vestibulum nec dui pellentesque, mattis sapien non, mollis turpis. Duis pharetra lorem in velit pulvinar, nec hendrerit ligula molestie. Phasellus id risus urna.</p>
+
+                                <p>Vestibulum scelerisque porttitor purus, in ultrices quam pellentesque sed. Quisque ac lacinia justo, at placerat velit. Aenean sit amet metus nec mi fringilla lacinia. Nulla dignissim mauris a bibendum commodo. Integer vulputate eros ante, fringilla varius libero tristique ac. Proin pellentesque metus quis nibh scelerisque laoreet. Nullam eu neque eget nunc ultrices blandit. Cras finibus lectus in lacus rhoncus mollis. Nunc ornare ex efficitur mi posuere pretium. Cras iaculis malesuada ligula. Curabitur maximus justo massa, eget blandit eros consectetur eu. Sed in egestas turpis. Quisque et sapien commodo, porttitor augue vitae, vehicula felis.</p>
+                            </div>
+
+
+                            <div role="tabpanel" class="tab-pane twocolumn fade" id="format" aria-labelledby="format-tab">
+                                <div id="lipsum">
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                        <li>Pellentesque auctor ligula at sapien pulvinar sagittis.</li>
+                                    </ul>
+                                    <p></p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>Curabitur dapibus diam sed elit imperdiet, eget suscipit nulla auctor.</li>
+                                        <li>Etiam bibendum neque vel urna rutrum facilisis.</li>
+                                        <li>Phasellus tempor justo in tortor hendrerit, eu laoreet magna aliquet.</li>
+                                    </ul>
+                                    <p></p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>Aliquam vel lorem eget dolor faucibus tincidunt vehicula quis lectus.</li>
+                                        <li>Duis ac elit ac risus cursus tempus.</li>
+                                        <li>Ut tristique urna eget hendrerit tincidunt.</li>
+                                        <li>Aliquam dictum urna ac purus tempor imperdiet.</li>
+                                    </ul>
+                                    <p></p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>Curabitur iaculis dui sed nisl scelerisque, et aliquet nibh convallis.</li>
+                                        <li>Nullam pellentesque odio ac tortor bibendum congue.</li>
+                                        <li>Sed ac tortor pretium, pulvinar orci vitae, suscipit felis.</li>
+                                        <li>Donec molestie dui aliquam, aliquet odio semper, sagittis lorem.</li>
+                                    </ul>
+                                    <p></p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>Nam eget sem vel mi venenatis lobortis suscipit non sapien.</li>
+                                        <li>Etiam eu massa ullamcorper sapien suscipit congue.</li>
+                                        <li>Nam in lectus ut ex posuere porttitor consectetur nec purus.</li>
+                                        <li>Ut vestibulum nunc id enim posuere, sit amet dignissim tortor porttitor.</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane onecolumn fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+                                <p>Sed sagittis elit dui, non sagittis lorem posuere vel. Etiam porta turpis egestas tellus tempor, sed cursus metus scelerisque. Praesent eget feugiat erat. Aliquam sed felis aliquet mi imperdiet rutrum. Mauris vel mi magna. Vestibulum nec dui pellentesque, mattis sapien non, mollis turpis. Duis pharetra lorem in velit pulvinar, nec hendrerit ligula molestie. Phasellus id risus urna.</p>
+
+                                <p>Vestibulum scelerisque porttitor purus, in ultrices quam pellentesque sed. Quisque ac lacinia justo, at placerat velit. Aenean sit amet metus nec mi fringilla lacinia. Nulla dignissim mauris a bibendum commodo. Integer vulputate eros ante, fringilla varius libero tristique ac. Proin pellentesque metus quis nibh scelerisque laoreet. Nullam eu neque eget nunc ultrices blandit. Cras finibus lectus in lacus rhoncus mollis. Nunc ornare ex efficitur mi posuere pretium. Cras iaculis malesuada ligula. Curabitur maximus justo massa, eget blandit eros consectetur eu. Sed in egestas turpis. Quisque et sapien commodo, porttitor augue vitae, vehicula felis.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane onecolumn fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+                                <p>Sed sagittis elit dui, non sagittis lorem posuere vel. Etiam porta turpis egestas tellus tempor, sed cursus metus scelerisque. Praesent eget feugiat erat. Aliquam sed felis aliquet mi imperdiet rutrum. Mauris vel mi magna. Vestibulum nec dui pellentesque, mattis sapien non, mollis turpis. Duis pharetra lorem in velit pulvinar, nec hendrerit ligula molestie. Phasellus id risus urna.</p>
+
+                                <p>Vestibulum scelerisque porttitor purus, in ultrices quam pellentesque sed. Quisque ac lacinia justo, at placerat velit. Aenean sit amet metus nec mi fringilla lacinia. Nulla dignissim mauris a bibendum commodo. Integer vulputate eros ante, fringilla varius libero tristique ac. Proin pellentesque metus quis nibh scelerisque laoreet. Nullam eu neque eget nunc ultrices blandit. Cras finibus lectus in lacus rhoncus mollis. Nunc ornare ex efficitur mi posuere pretium. Cras iaculis malesuada ligula. Curabitur maximus justo massa, eget blandit eros consectetur eu. Sed in egestas turpis. Quisque et sapien commodo, porttitor augue vitae, vehicula felis.</p>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane onecolumn fade" id="dropdown3" aria-labelledby="dropdown3-tab">
+                                <p>Sed sagittis elit dui, non sagittis lorem posuere vel. Etiam porta turpis egestas tellus tempor, sed cursus metus scelerisque. Praesent eget feugiat erat. Aliquam sed felis aliquet mi imperdiet rutrum. Mauris vel mi magna. Vestibulum nec dui pellentesque, mattis sapien non, mollis turpis. Duis pharetra lorem in velit pulvinar, nec hendrerit ligula molestie. Phasellus id risus urna.</p>
+
+                                <p>Vestibulum scelerisque porttitor purus, in ultrices quam pellentesque sed. Quisque ac lacinia justo, at placerat velit. Aenean sit amet metus nec mi fringilla lacinia. Nulla dignissim mauris a bibendum commodo. Integer vulputate eros ante, fringilla varius libero tristique ac. Proin pellentesque metus quis nibh scelerisque laoreet. Nullam eu neque eget nunc ultrices blandit. Cras finibus lectus in lacus rhoncus mollis. Nunc ornare ex efficitur mi posuere pretium. Cras iaculis malesuada ligula. Curabitur maximus justo massa, eget blandit eros consectetur eu. Sed in egestas turpis. Quisque et sapien commodo, porttitor augue vitae, vehicula felis.</p>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane onecolumn fade" id="dropdown4" aria-labelledby="dropdown4-tab">
+                                <p>Sed sagittis elit dui, non sagittis lorem posuere vel. Etiam porta turpis egestas tellus tempor, sed cursus metus scelerisque. Praesent eget feugiat erat. Aliquam sed felis aliquet mi imperdiet rutrum. Mauris vel mi magna. Vestibulum nec dui pellentesque, mattis sapien non, mollis turpis. Duis pharetra lorem in velit pulvinar, nec hendrerit ligula molestie. Phasellus id risus urna.</p>
+
+                                <p>Vestibulum scelerisque porttitor purus, in ultrices quam pellentesque sed. Quisque ac lacinia justo, at placerat velit. Aenean sit amet metus nec mi fringilla lacinia. Nulla dignissim mauris a bibendum commodo. Integer vulputate eros ante, fringilla varius libero tristique ac. Proin pellentesque metus quis nibh scelerisque laoreet. Nullam eu neque eget nunc ultrices blandit. Cras finibus lectus in lacus rhoncus mollis. Nunc ornare ex efficitur mi posuere pretium. Cras iaculis malesuada ligula. Curabitur maximus justo massa, eget blandit eros consectetur eu. Sed in egestas turpis. Quisque et sapien commodo, porttitor augue vitae, vehicula felis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+</body>
+
+</html>
