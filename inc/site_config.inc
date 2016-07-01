@@ -13,9 +13,14 @@
 <link rel="stylesheet" href="<!--#echo var='studentpath' -->comp1950project/css/normalize.css" />
 <link rel="stylesheet" href="<!--#echo var='studentpath' -->comp1950project/css/bootstrap.min.css" />
 <link rel="stylesheet" href="<!--#echo var='studentpath' -->comp1950project/css/projectstyle.css" />
+<link rel="stylesheet" href="<!--#echo var='studentpath' -->comp1950project/css/reveal.css" />
 
 <!-- Java Script -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="<!--#echo var='studentpath' -->comp1950project/js/jquery.slidereveal.min.js"></script>
 <script type="text/javascript" src="<!--#echo var='studentpath' -->comp1950project/js/bootstrap.min.js"></script>
+
+
+
+
 

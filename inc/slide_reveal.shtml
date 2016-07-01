@@ -23,6 +23,16 @@
                 $("#slidemenu").slideReveal("hide");
             });
             
+            
+            $("button[exercise-id]").click( function (event) {
+                //alert("button[excercise-id]");  
+                event.preventDefault();
+                var modalLocation = $(this).attr('exercise-id');
+                //alert(modalLocation);
+                $('#' + modalLocation).reveal($(this).data());
+            });
+            
+            
             /*------*/
             /* Quiz */
             /*------*/
@@ -39,9 +49,9 @@
                 $("#slidequiz").slideReveal("hide");
             });
             
-            /*----------------------------*/
-            /* Dynamic load menu and quiz */
-            /*----------------------------*/
+            /*---------------------------------------*/
+            /* Dynamic load menu, exercise, and quiz */
+            /*---------------------------------------*/
             $("a[menu-id]").click(function(event) {
                 $('#dynamicload').empty();
                 event.preventDefault();
@@ -59,17 +69,25 @@
                 // Hide slide menu after choose
                 $("#slidemenu").slideReveal("hide");
                 
-                //Enable quiz button if lecture
+                //Enable quiz and exercise button if lecture
                 if (value.indexOf("lecture") !=-1) {
                   $("#triggerquiz").attr("class","btn btn-primary");
+                  $("#triggerexercise").attr("class","btn btn-success");
                     
-                  // load quiz page in advance using value variable
+                  // Pre-load quiz page in advance using value variable
                   loadpage = "<!--#echo var='studentpath' -->comp1950project/quizs/" + (value + "_quiz.html #") + value +" > *";
-                  //alert("dynamicquiz = " + loadpage);
+                  //alert("dynamicquiz = " + loadpage); 
                   $('#dynamicquiz').empty();
                   $("#dynamicquiz").load(loadpage);
+                   
+                  // Pre-load exercise
+                  loadpage = "<!--#echo var='studentpath' -->comp1950project/exercises/" + (value + "_exercise.html #") + value +" > *";  
+                  //alert("dynamicexercise = " + loadpage);
+                  $('#dynamicexercise').empty();
+                  $('#dynamicexercise').load(loadpage);  
                 }else{
                   $("#triggerquiz").attr("class","btn btn-primary disabled");
+                  $("#triggerexercise").attr("class","btn btn-success disabled");
                   $('#dynamicquiz').empty();
                 }
             });     
@@ -80,21 +98,21 @@
     <div id="slidequiz">
         <!-- h3 style="margin-left: 50px">Press <kbd>ESC</kbd> to exit the menu</h3 -->
         <form class="form-horizontal" style="padding-left: 30px">
-        <div id="dynamicquiz">
-            <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h1><span class="label label-default">Quiz1</span></h1>
+            <div id="dynamicquiz">
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1><span class="label label-default">Quiz1</span></h1>
+                        </div>
+                        <div class="panel-body" style="border-style:none">
                     </div>
-                    <div class="panel-body" style="border-style:none">
                 </div>
             </div>
-        </div>
-        <div class="form-group" style="margin-top: 20px">
-            <div class="col-sm-offset-2 col-sm-10">
-                <a class="btn btn-success" href="#" role="button">Submit your quiz</a>&nbsp;&nbsp;&nbsp;
-                <button type="button"  id="cancelquiz" class="btn btn-danger">Cancel</button>
+            <div class="form-group" style="margin-top: 20px">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <a class="btn btn-success" href="#" role="button">Submit your quiz</a>&nbsp;&nbsp;&nbsp;
+                    <button type="button"  id="cancelquiz" class="btn btn-danger">Cancel</button>
+                </div>
             </div>
-        </div>
         </form>     
     </div>
     <div id="slidemenu">
