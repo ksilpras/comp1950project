@@ -76,8 +76,8 @@
                 var filepath = $(this).attr("href");
                 var value = $(this).attr("menu-id");
                 
-                var loadpage = filepath + " #" + value + " > *";
-                
+                var loadpage = filepath + ("?"+value) + " #" + value + " > *";
+                //alert(loadpage);
                 $("#dynamicload").load(loadpage);
 
                 //reset active inactive here
@@ -108,6 +108,7 @@
                     $("#triggerexercise").attr("class", "btn btn-success disabled");
                     $('#dynamicquiz').empty();
                 }
+                
             });
         });
     </script>
