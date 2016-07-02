@@ -86,3 +86,14 @@ h1 {
     -moz-column-rule: 1px solid lightblue; /* Firefox */
     column-rule: 1px solid lightblue;
 }
+
+.list-group-item.disabled,
+.list-group-item.disabled:focus,
+.list-group-item.disabled:hover {
+    color: white;
+    cursor: not-allowed;
+    border: 1px solid #999fc4;
+    background-color: #999fc4
+}
+
+
