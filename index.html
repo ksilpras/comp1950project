@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- Common declaration -->
     <meta charset="utf-8">
@@ -42,10 +42,10 @@
             });
 
 
-            $("button[exercise-id]").click(function(event) {
+            $("button[data-exercise-id]").click(function(event) {
                 //alert("button[excercise-id]");  
                 event.preventDefault();
-                var modalLocation = $(this).attr('exercise-id');
+                var modalLocation = $(this).attr('data-exercise-id');
                 //alert(modalLocation);
                 $('#' + modalLocation).reveal($(this).data());
             });
@@ -70,11 +70,11 @@
             /*---------------------------------------*/
             /* Dynamic load menu, exercise, and quiz */
             /*---------------------------------------*/
-            $("a[menu-id]").click(function(event) {
+            $("a[data-menu-id]").click(function(event) {
                 $('#dynamicload').empty();
                 event.preventDefault();
                 var filepath = $(this).attr("href");
-                var value = $(this).attr("menu-id");
+                var value = $(this).attr("data-menu-id");
                 
                 var loadpage = filepath + ("?"+value) + " #" + value + " > *";
                 //alert(loadpage);
@@ -112,7 +112,10 @@
             });
         });
     </script>
+    <title>Comp1950 : Home</title>
+</head>
 
+<body>
     <div id="slidequiz">  
         <form class="form-horizontal" style="padding-left: 30px">
             <div id="dynamicquiz">
@@ -135,26 +138,20 @@
     <div id="slidemenu">     
         <div class="list-group" style="margin-left: 50px">
             <a href="#" class="list-group-item list-group-item-success disabled">Contents</a>
-            <a href="index.html" menu-id="dynamicload" class="list-group-item active">&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
-            <a href="courseinfo/courseinfo.html" menu-id="courseinfo" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;About the course</a>
+            <a href="index.html" data-menu-id="dynamicload" class="list-group-item active">&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+            <a href="courseinfo/courseinfo.html" data-menu-id="courseinfo" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;About the course</a>
             <a href="#" class="list-group-item list-group-item-success disabled">Lectures</a>
-            <a href="lectures/lecture1.html" menu-id="lecture1" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Lecture 1 - HTML5</a>
-            <a href="lectures/lecture2.html" menu-id="lecture2" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Lecture 2 - CSS Technique</a>
-            <a href="lectures/lecture3.html" menu-id="lecture3" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Lecture 3 - CSS Layout</a>
+            <a href="lectures/lecture1.html" data-menu-id="lecture1" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Lecture 1 - HTML5</a>
+            <a href="lectures/lecture2.html" data-menu-id="lecture2" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Lecture 2 - CSS Technique</a>
+            <a href="lectures/lecture3.html" data-menu-id="lecture3" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Lecture 3 - CSS Layout</a>
             <a href="#" class="list-group-item list-group-item-success disabled">Exercises</a>
             <a href="exercises/all_exercises.html" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;All exercises</a>
             <button type="button" id="cancelmenu" class="btn btn-danger" style="margin-top: 20px">Cancel</button>
         </div>
     </div>
-    <title>Comp1950 : Home</title>
-</head>
-
-<body>
-
     <!-- Banner goes here, Animated letters are here -->
     <header>
         <div id="banner">
-            <a name="top"></a>
             <h5 style="color:white;"><a href="http://validator.w3.org/check?uri=referer">british columbia institute of technology</a></h5>
         </div>
     </header>
@@ -170,7 +167,7 @@
         <div class="row topright">
             <button id='triggermenu' type="button" class="btn btn-primary">Display Menu</button>
             <button id='triggerquiz' type="button" class="btn btn-primary disabled">Display Quiz</button>
-            <button id='triggerexercise' exercise-id="exerciseModal" type="button" class="btn btn-success disabled">Exercise</button>
+            <button id='triggerexercise' data-exercise-id="exerciseModal" type="button" class="btn btn-success disabled">Exercise</button>
         </div>
         <div id="dynamicload">
             <div class="panel panel-default">
@@ -185,7 +182,7 @@
                         <div id="myTabContent" class="tab-content">
                             <div role="tabpanel" class="tab-pane twocolumn fade in active" id="home" aria-labelledby="home-tab">
                                
-                                <img src="img/homer_1042.jpg" width="30%" height="30%" alt="Joe_image" style="float:left;"/>
+                                <img src="img/homer_1042.jpg" width="180" height="250" alt="Homer_image" style="float:left;"/>
                                 <p><strong>COMP 1950</strong> follows on from <a href="#">COMP 1850</a> in more depth and introduces new topics and techniques for developing effective web sites.</p>
 
                                 <p>Students will gain a deeper understanding of HTML and CSS. Topics will include: Current and emerging trends in HTML, detailed use of CSS for layout and presentation, an introduction to JavaScript frameworks such as jQuery, how to leverage Server Side Includes (SSI) for re-usable code, and working with Content Management Systems.</p>
