@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/*------------------*/
+/* Print style */
+/*------------------*/
+body {
+    background: none;
+    float: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-family:"arial";
+    background-color: white;
+}
+
+img, button, nav, .btn {
+    display: none;
+}
+
+.label {
+    background: none;
+}
+
+#myTabs > * {
+    background: none;
+}
+
+a[href^="http"]:link:after, a[href^="http"]:visited:after {
+    content: " (URL :"attr(href)") ";
+    font-size: 90%;
+}
+
+h1, h2, h3 {
+   page-break-after: avoid;
+
+}
+
+article {
+   page-break-after: always;
+}
+
+header h1 {
+    color:black;
+    text-align:left;
+    text-decoration: underline;
+    background: none;
+}
+
+header h2 {
+    color:black;
+    text-align:left;
+    text-decoration: underline;
+    background: none;
+}
+
+header h3 {
+    color:black;
+    text-align:left;
+    text-decoration: none;
+    background: none;
+}
+
+}
+
+.twocolumn {
+    padding: 15px;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+    
+    -webkit-column-rule: 1px solid white; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid white; /* Firefox */
+    column-rule: 1px solid white;
+}
+
+.threecolumn {
+    padding: 15px;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+    
+    -webkit-column-rule: 1px solid white; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid white; /* Firefox */
+    column-rule: 1px solid white;
+}

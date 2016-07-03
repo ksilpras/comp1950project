@@ -13,8 +13,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/projectstyle.css" />
     <link rel="stylesheet" href="../css/reveal.css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" title="normal" href="../css/projectstyle.css"/>
+    <link rel="alternate stylesheet" title="projector" href="../css/projectstyle_projection.css"/>
+    <link rel="stylesheet" href="../css/projectstyle_print.css" media="print"/>
 
     <!-- Java Script -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -29,8 +32,8 @@
             <div class="panel panel-default" style="margin-top: 30px">
                 <div class="panel-heading">
                     <h1><span class="label label-default">All Exercises</span></h1>
-                    <div class="row topright">
-                        <a href="../index.html" class="btn btn-warning">Return to Homepage</a>
+                    <div class="topright">
+                        <a href="../index.html" class="btn btn-success">Return to Homepage</a>
                     </div>
                 </div>
                 <div class="panel-body">
@@ -39,7 +42,7 @@
 
                             <li role="presentation" class="active"><a href="#lec1" id="lec1-tab" role="tab" data-toggle="tab" aria-controls="lec1" aria-expanded="true">HTML 5</a></li>
 
-                            <li role="presentation"><a href="#lec2" role="tab" id="lec2-tab" data-toggle="tab" aria-controls="lec2">CSS Technique</a></li>
+                            <li role="presentation"><a href="#lec2" role="tab" id="lec2-tab" data-toggle="tab" aria-controls="lec2">CSS Techniques</a></li>
 
                             <li role="presentation"><a href="#lec3" role="tab" id="lec3-tab" data-toggle="tab" aria-controls="lec3">CSS Layout</a></li>
 
@@ -47,6 +50,7 @@
                         <div id="myTabContent" class="tab-content">
                             <div role="tabpanel" class="tab-pane onecolumn fade in active" id="lec1" aria-labelledby="lec1-tab">
                                 <p><strong>Exercise 1</strong>
+                                <img src="../img/beer.jpg" width="400" height="155" alt="beer" class="float float-left padding">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula maximus condimentum. In placerat mi vitae dui dignissim, id elementum tellus cursus. Suspendisse elit purus, luctus vel nibh sed, consectetur condimentum ligula. Donec at tincidunt tellus. Fusce finibus porttitor nunc, at consectetur nibh porttitor in. Curabitur non condimentum dui. Quisque sodales placerat diam, finibus tempus eros. Sed at pretium arcu. Aliquam erat volutpat. Nulla pharetra tellus vitae ultricies elementum.
                                 </p>
                                 <p>
@@ -55,57 +59,7 @@
                                 <p><Strong>Exercise 2</Strong>
                                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi iaculis, nunc efficitur tempor pulvinar, lectus enim sollicitudin eros, eu tempus nisl odio id ex. Sed vulputate massa et fringilla accumsan. Vestibulum viverra eget metus nec pretium. Sed vulputate lacus ligula, in sollicitudin est faucibus at. Donec felis enim, tempus ac sapien id, ornare tincidunt neque. Curabitur fringilla augue vel orci fermentum viverra. Nunc in risus ac metus lacinia auctor.
                                 </p>
-                                <p>
-                                    Vivamus venenatis pellentesque massa, sed rhoncus elit congue non. Phasellus viverra tortor vel maximus pellentesque. Etiam maximus a sem ac consequat. Pellentesque luctus ex felis, nec sagittis lacus sollicitudin quis. Praesent vitae dapibus felis. Curabitur rutrum, metus ac viverra lacinia, mauris quam condimentum nunc, in accumsan odio dui at dui. Maecenas ut mauris eget ipsum laoreet finibus. Proin blandit neque quis mollis lobortis. Nunc eget nunc risus. Cras auctor tincidunt sodales. Vivamus sit amet dolor ut odio ullamcorper egestas. Pellentesque semper, eros a blandit sodales, risus justo maximus sapien, quis gravida augue odio ut ex. Nulla fermentum tristique arcu, ac placerat elit commodo vel.
-                                </p>
-                                <p>
-                                    Aliquam justo nunc, fermentum eu urna et, ultrices porta enim. Duis ut viverra turpis, eu fermentum diam. Integer eu fringilla orci. Proin lectus nibh, imperdiet ac nisl eget, laoreet fermentum nisl. Nulla at laoreet magna. Quisque in turpis et massa euismod blandit. Pellentesque porttitor leo ac libero malesuada ullamcorper.
-                                </p>
-                                <p><strong>Exercise 3</strong>
-                                    Nunc gravida ut justo ac tempus. Nulla a mi egestas, consequat libero sed, pharetra risus. Nam sed dui in nisl rhoncus ultrices eget quis leo. Sed aliquet ac leo nec vulputate. Mauris at mi dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sit amet metus eu elit hendrerit fermentum. Nunc hendrerit, dolor vel dignissim ultrices, urna justo auctor massa, in pretium tortor lacus non ex. Vivamus vitae tincidunt tortor, quis varius urna. Pellentesque semper consequat euismod. Etiam vitae lacus auctor est posuere mattis. Duis ligula odio, molestie eget hendrerit vitae, pharetra non sapien. Quisque placerat libero sed nisi euismod interdum. Nulla nec risus consequat tortor viverra accumsan. Cras semper dui eu hendrerit bibendum. Cras hendrerit ut sem sit amet posuere.
-                                </p>
-                                <p>
-                                    Integer gravida euismod finibus. In fermentum est in tellus egestas dapibus. Pellentesque et mi et metus pellentesque venenatis. Curabitur non magna quis tellus fringilla consequat quis sit amet velit. Integer pellentesque eros et libero elementum lacinia. Aliquam ac mauris tortor. Nunc dignissim metus vitae viverra sagittis. Sed eget tincidunt lectus. Praesent at cursus arcu. Cras ac imperdiet orci. Phasellus blandit aliquam dictum. Proin et dolor tristique, laoreet felis vitae, aliquam sapien. Aenean dignissim sagittis nisi nec lacinia. In hac habitasse platea dictumst. Suspendisse ac varius orci, in cursus tortor. Praesent bibendum, nisl sit amet elementum suscipit, ante nibh pellentesque erat, a hendrerit augue lectus ut augue.
-                                </p>
-                                <p>
-                                    Fusce eu blandit lectus. Aliquam erat volutpat. Praesent diam augue, dapibus at commodo nec, suscipit ac massa. Mauris molestie ex libero, sit amet pellentesque neque blandit luctus. Pellentesque venenatis libero sed facilisis mattis. Curabitur a libero ac mi faucibus scelerisque. Donec vel molestie diam, nec semper diam. Integer eu aliquam lectus, id rhoncus lectus.
-                                </p>
-                                <p><strong>Exercise 4</strong>
-                                    Quisque aliquet lorem a pharetra tempor. Aliquam sagittis in turpis nec congue. Aenean et fermentum est, porttitor tincidunt leo. In vitae semper tellus. Praesent mattis a leo vel egestas. In hac habitasse platea dictumst. Pellentesque metus sapien, ultricies eget porttitor maximus, elementum eget magna. Nam eget dapibus mi.
-                                </p>
-                                <p>
-                                    Cras vehicula non quam id tincidunt. Sed ullamcorper risus sed nisi condimentum, at mattis quam convallis. Sed bibendum consectetur ipsum in iaculis. Donec vestibulum dui massa, feugiat aliquam dui ultricies sed. Donec sagittis, nisi at egestas ultrices, nisl dui efficitur dolor, hendrerit venenatis urna turpis dapibus erat. Nullam rutrum, dolor nec laoreet venenatis, quam ex sodales velit, ac congue purus enim quis est. Sed in aliquam mauris. Etiam vitae ex tellus. Nunc id dui odio. Donec mauris neque, sagittis sit amet nulla vel, gravida aliquet magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis mattis scelerisque volutpat.
-                                </p>
-                                <p>
-                                    Aliquam erat volutpat. Morbi feugiat tincidunt metus, quis aliquet tellus. Nam molestie dui eu dolor interdum fermentum. Donec sodales nulla enim, at pellentesque diam convallis at. Maecenas sit amet enim a tellus venenatis efficitur eu eget libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam urna tellus, in efficitur velit pharetra vitae. Curabitur ultrices a felis posuere tempor. Curabitur egestas id mi ac venenatis. Pellentesque vehicula ipsum at felis auctor, vitae sodales tellus pharetra. Donec sapien sapien, ornare nec consequat et, dictum sit amet massa. Quisque faucibus ac elit ut dapibus. Morbi luctus mauris erat, et mattis odio tincidunt sed. Curabitur a mauris facilisis, fringilla odio ut, semper augue. Vestibulum dolor risus, tempor id quam id, blandit rhoncus ex. Aenean tincidunt arcu ipsum, vel suscipit nibh efficitur nec.
-                                </p>
-                                <p>
-                                    Praesent vitae eros condimentum mauris fermentum lobortis. Pellentesque augue massa, tempor at semper sed, faucibus sed ligula. Donec tincidunt blandit massa quis venenatis. In suscipit eleifend commodo. Pellentesque non malesuada felis. Vestibulum in vestibulum magna. Ut eget justo mattis, efficitur orci quis, rhoncus nibh. Donec dapibus vehicula enim viverra tempor. Proin tincidunt sodales dui, nec iaculis purus ullamcorper non. Aenean lobortis vel dolor a ullamcorper. Fusce sapien sapien, pharetra vitae varius id, malesuada eu nunc. Ut pulvinar nec tortor ut blandit. Morbi ornare arcu ut nisi condimentum tincidunt. Cras ut urna hendrerit, imperdiet dui quis, accumsan libero.
-                                </p>
-                                <p>
-                                    Sed a aliquet mauris, suscipit ultrices leo. Nulla ante metus, tincidunt vel mattis a, vestibulum sit amet metus. Quisque posuere sit amet urna sit amet cursus. Pellentesque commodo nunc sit amet justo mollis ultricies. Duis ultrices magna vel magna tristique, ut eleifend nisi tincidunt. Sed ut pellentesque felis. Nulla ac tellus in orci euismod euismod. Praesent eget tellus suscipit, posuere ipsum a, feugiat sapien. In euismod lectus non ante posuere, vel lobortis nisl faucibus. Nulla semper elit at purus venenatis hendrerit. Aenean mattis eleifend purus, ut varius dolor ornare a. Praesent fringilla ex sed magna varius, non egestas sapien consectetur.
-                                </p>
-                                <p>
-                                    Aenean tempus velit id ex maximus, sit amet lacinia felis tincidunt. Vivamus porttitor dictum nibh sit amet egestas. Pellentesque vitae nisl non magna mattis volutpat. Praesent laoreet mauris vitae placerat volutpat. Sed sit amet magna placerat, maximus nisi vel, dignissim erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas ornare erat luctus, pretium lorem eu, cursus nulla. Nulla facilisi. Mauris feugiat fringilla sodales. Cras auctor massa in mauris consectetur, ut consequat augue venenatis. Maecenas ut sem commodo, tristique justo nec, ultricies arcu. Sed risus turpis, tempor in odio ac, ultricies fermentum libero. Donec porta auctor faucibus. Phasellus sollicitudin luctus tincidunt.
-                                </p>
-                                <p>
-                                    Duis hendrerit metus euismod elit gravida, non euismod ante ornare. Donec tempus rhoncus felis, in euismod orci ullamcorper non. Nam tristique, nibh at volutpat tincidunt, orci sem dictum lorem, ut commodo lorem lectus sit amet urna. Morbi tristique diam quis enim vestibulum vehicula. Duis malesuada dui in ligula commodo fringilla. Vestibulum luctus ipsum orci, sed porta purus malesuada vitae. Nam a aliquet urna.
-                                </p>
-                                <p>
-                                    Nunc et ultricies quam. Morbi et tempus tellus, eget tincidunt ligula. Integer pulvinar, justo vitae varius rhoncus, mi nunc venenatis risus, et laoreet tellus enim sed felis. Quisque dolor magna, aliquam at fringilla sed, viverra a est. Curabitur accumsan consectetur lectus vitae maximus. Morbi sed laoreet urna, ut dignissim nisl. Nullam non quam sed ipsum maximus ultricies. Praesent commodo vulputate dapibus. Suspendisse vel luctus arcu. Etiam elementum elit ut tortor dignissim, et vestibulum nisi luctus. Fusce id commodo est. Nulla a scelerisque quam. Nam in eros vel libero porta rutrum. Etiam feugiat nibh aliquam risus consequat, ut tempor leo mollis.
-                                </p>
-                                <p>
-                                    Nunc bibendum consequat commodo. Ut finibus nunc tellus, ac maximus turpis hendrerit a. Vivamus commodo arcu at nisl aliquam, eu consectetur magna varius. Nam vehicula, erat at hendrerit eleifend, lacus nisi gravida elit, non cursus lorem neque id lorem. Donec non tincidunt lorem, non mollis justo. Pellentesque venenatis risus non viverra vulputate. Maecenas non sagittis nisi. Aliquam nibh velit, elementum vitae aliquet et, suscipit consectetur elit. Donec non metus consequat, fringilla massa at, gravida ligula. Pellentesque vehicula pulvinar sem et tempor. Pellentesque sagittis leo ut cursus pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                </p>
-                                <p>
-                                    Mauris ut justo nec eros lobortis luctus. Vestibulum consectetur felis leo, a fringilla lectus efficitur eu. Phasellus vestibulum lorem orci, dignissim efficitur orci porta at. Sed porta odio ac lectus aliquam, nec ullamcorper leo ornare. Mauris pretium viverra metus, nec tincidunt orci. Ut eleifend ante felis, ac faucibus neque pretium vel. In dictum lectus at enim lobortis, eu pretium tortor maximus.
-                                </p>
-                                <p>
-                                    Nunc mauris libero, imperdiet a tellus ac, pretium tincidunt libero. Praesent est dui, tempus id erat ac, vulputate posuere velit. Phasellus ornare ut felis vitae efficitur. Vivamus mollis sapien eu dui pharetra, quis aliquam urna hendrerit. Vivamus ut dui sit amet urna ullamcorper condimentum. Pellentesque sed dapibus ligula. Phasellus elit nunc, porttitor id mollis id, sagittis ac justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer eleifend, sem eu eleifend varius, augue ante luctus dui, mattis ornare urna ligula nec mi. In placerat erat velit, sit amet rutrum mauris porta vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis euismod a sem vitae commodo. Sed tristique, dui id efficitur hendrerit, dolor augue accumsan nibh, non tincidunt ante elit at dui.
-                                </p>
-                                <p>
-                                    Suspendisse pellentesque non mi ac lobortis. Nunc varius, mauris et accumsan iaculis, elit purus tempor turpis, a convallis mauris quam non sem. Nam ut justo tincidunt, mattis turpis non, pellentesque ex. Maecenas ullamcorper, odio ut convallis laoreet, urna leo pharetra felis, sit amet eleifend neque lacus vel diam. Nullam quis sollicitudin orci, quis vulputate nisi. Pellentesque volutpat diam sed erat mattis, a porta eros facilisis. Integer ac accumsan purus, at facilisis ligula. Nam quis commodo est, non varius nunc. Aliquam at pellentesque leo. Donec ultricies commodo erat in eleifend. Integer vitae eleifend ipsum, ut aliquam mauris. Sed semper, justo blandit suscipit consectetur, lacus libero pharetra risus, non vestibulum odio metus ut nisi.
-                                </p>
+                                
                             </div>
 
                             <div role="tabpanel" class="tab-pane twocolumn fade" id="lec2" aria-labelledby="lec2-tab">

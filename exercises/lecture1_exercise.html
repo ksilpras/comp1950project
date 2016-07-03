@@ -12,9 +12,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/projectstyle.css" />
     <link rel="stylesheet" href="../css/reveal.css" />
-    
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" title="normal" href="../css/projectstyle.css"/>
+    <link rel="alternate stylesheet" title="projector" href="../css/projectstyle_projection.css"/>
+    <link rel="stylesheet" href="../css/projectstyle_print.css" media="print"/>
+
     <!-- Java Script -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
@@ -38,9 +41,17 @@
 
                         </ul>
                         <div id="myTabContent" class="tab-content">
-                            <div role="tabpanel" class="tab-pane threecolumn fade in active" id="lec1exe1" aria-labelledby="lec1exe1-tab">
+                            <div role="tabpanel" class="tab-pane fade in active" id="lec1exe1" aria-labelledby="lec1exe1-tab">
                                 <p>
                                     </p>
+                                    
+                                    <!--#if expr="v('QUERY_STRING') != ''" -->
+                                        <img src="img/beer.jpg" width="300" height="125" alt="beer" class="float, float-left" id="beer"> float-left">
+                                    <!--#else -->
+                                        <img src="../img/beer.jpg" width="300" height="125" alt="beer" class="float, float-left" id="beer">
+                                    <!--#endif-->
+                                    
+                                    
                                     <ul>
                                         <li>Curabitur dapibus diam sed elit imperdiet, eget suscipit nulla auctor.</li>
                                         <li>Etiam bibendum neque vel urna rutrum facilisis.</li>
