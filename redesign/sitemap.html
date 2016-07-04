@@ -1,91 +1,110 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-	<title>Comp1950 : Project sitemap</title>
-	
-	<link rel="stylesheet" type="text/css" href="./comp 1950 _ lecture nine_ group project work_files/comp1.css" media="screen">
-	<link rel="alternate stylesheet" href="./comp 1950 _ lecture nine_ group project work_files/overhead.css" type="text/css" media="screen" title="Overhead">
-	<link rel="stylesheet" type="text/css" href="./comp 1950 _ lecture nine_ group project work_files/print.css" media="print">
-	
-	<link rel="stylesheet" type="text/css" media="screen, print" href="./comp 1950 _ lecture nine_ group project work_files/sitemap.css">
+    <title>Comp1950 : Project sitemap</title>
+    
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" title="normal" type="text/css" href="css/sitemap.css" media="screen, projection">
+    <link rel="alternate stylesheet" title="projector" href="css/projectstyle_projection.css"/>
+    <link rel="stylesheet" href="css/projectstyle_print.css" media="print"/>
+    
 </head>
+
 <body>
+    <div class="sitemap">
 
-	<div class="sitemap">
-		
-		<h1>COMP1950 Example Sitemap</h1>
-		<h2>Not final version - for demonstration only</h2>
-	
-		<ul id="utilityNav">
-			<li><a href="http://my.bcit.ca/">myBCIT</a></li>
+        <h1>COMP1950 Example Sitemap</h1>
 
-			<li><a href="http://www.bcitcomp.ca/materials">Course Materials</a></li>
-			<li><a href="http://www.bcitcomp.ca/sitemap">Site Map</a></li>
-		</ul>
+        <ul id="utilityNav">
+            <li><a href="http://www.bcitcomp.ca/students/ksilprasert/comp1950project/redesign/demosite/index.html">Demo site</a></li>
+        </ul>
 
-		<ul id="primaryNav">
-			<li id="home"><a href="http://thenet.ca/1950">Home</a></li>
-			<li><a href="http://www.bcitcomp.ca/about">About COMP1950</a>
+        <ul id="primaryNav">
+            <li id="home"><a href="http://www.bcitcomp.ca/comp1950site/">Home</a></li>
+            
+            <li><a href="/courseinfo/courseinfo.html">About the course</a>
+            </li>
+            
+            <li><a href="/lectures/">Lectures</a>
 
-				<ul>
-					<li><a href="http://www.bcitcomp.ca/outline">Outline</a></li>
-					<li><a href="http://www.bcitcomp.ca/syllabus">Syllabus</a></li>
-					<li><a href="http://www.bcitcomp.ca/contact">Contact Info</a></li>
-				</ul>
-			</li>
-			<li><a href="http://www.bcitcomp.ca/lectures">Lectures</a>
-
-				<ul>
-					<li><a href="http://www.bcitcomp.ca/lectures/week1">Day One</a>
-						<ul>
-							<li><a href="http://www.bcitcomp.ca/lectures/day1#agenda">Agenda</a></li>
-							<li><a href="http://www.bcitcomp.ca/lectures/day1#curriculum">Curriculum</a></li>
-							<li><a href="http://www.bcitcomp.ca/lectures/day1#exercises">Exercises</a></li>
-							<li><a href="http://www.bcitcomp.ca/lectures/day1#homework">Homework</a></li>
-
-						</ul>
-					</li>
-					<li><a href="http://www.bcitcomp.ca/lectures/day2">Day 2</a></li>
-					<li><a href="http://www.bcitcomp.ca/lectures/day3">Day 3</a></li>
-					<li><a href="http://www.bcitcomp.ca/lectures/...">...</a></li>
-				</ul>
-			</li>
-
-			<li><a href="http://www.bcitcomp.ca/project">Project</a>
-				<ul>
-					<li><a href="http://www.bcitcomp.ca/project/outline">Outline</a></li>
-					<li><a href="http://www.bcitcomp.ca/project/requirements">Requirements</a></li>
-					<li><a href="http://www.bcitcomp.ca/project/...">...</a></li>
-				</ul>
-
-			</li>
-			<li><a href="http://www.bcitcomp.ca/etc">etc</a>
-				<ul>
-
-					<li><a href="http://www.bcitcomp.ca/etc/1">More stuff</a>
-						<ul>
-							<li><a href="http://www.bcitcomp.ca/etc/2">Sub list</a></li>
-							<li><a href="http://www.bcitcomp.ca/etc/2">More sub</a></li>
-
-						</ul>
-					</li>
-				</ul>
-
-			</li>	
-		</ul>
-
-	</div>
-	
-	<div class="notes">
-		
-		<p>The above sitemap was created from an HTML unordered list with <a href="http://astuteo.com/slickmap">SlickMap CSS.</a></p>
-
-		
-	</div>
-	
+                <ul>
+                    <li><a href="/lectures/lecture1.html">Lecture1</a>
+                        <ul>
+                            <li><a href="/exercises/lecture1_exercise.html">Lecture 1 exercise</a></li>
+                            <li><a href="/quiz/lecture1_quiz.html">Lecture 1 quiz</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/lectures/lecture2.html">Lecture 2</a>
+                        <ul>
+                            <li><a href="/exercises/lecture2_exercise.html">Lecture 2 exercise</a></li>
+                            <li><a href="/quiz/lecture2_quiz.html">Lecture 2 quiz</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/lectures/lecture3.html">Lecture 3</a>
+                        <ul>
+                            <li><a href="/exercises/lecture3_exercise.html">Lecture 3 exercises</a></li>
+                            <li><a href="/quiz/lecture3_quiz.html">Lecture 3 quiz</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.bcitcomp.ca/lectures/..." disabled>Lecture n</a>
+                        <ul>
+                            <li><a href="...">Lecture n exercises</a></li>
+                            <li><a href="...">Lecture n quiz</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
 
 
+            <li><a href="/exercises/">Exercises</a>
+                <ul>
+                    <li><a href="/lectures/all_exercises.html">All exercises</a></li>
+                    <li><a href="/lectures/lecture1_exercise.html">Lecture 1 exercise</a></li>
+                    <li><a href="/lectures/lecture2_exercise.html">Lecture 2 exercise</a></li>
+                    <li><a href="/lectures/lecture3_exercise.html">Lecture 3 exercise</a></li>
+                </ul> 
+            </li> 
+            
+                
+            <li><a href="/quizs/">Quizs</a>
+                <ul>
+                    <li><a href="/quiz/lecture1_quiz.html">Lecture 1 quiz</a></li>
+                    <li><a href="/quiz/lecture2_quiz.html">Lecture 2 quiz</a></li>
+                    <li><a href="/quiz/lecture3_quiz.html">Lecture 3 quiz</a></li>
+                </ul>
+            </li>
+                 
+            <li><a href="/.../">...</a>
+                <ul>
+                    <li><a href="/.../">...</a>
+                    <ul>
+                            <li><a href="/.../">...</a></li>
+                            <li><a href="/.../">...</a></li>
 
-</body></html>
+                        </ul>
+                    
+                    </li>   
+                </ul>
+            </li>
+                
+        </ul>
+
+    </div>
+
+    <div class="notes">
+
+        <p>The above sitemap was created from an HTML unordered list with <a href="http://astuteo.com/slickmap">SlickMap CSS.</a></p>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

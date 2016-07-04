@@ -1,5 +1,6 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
+
 <head>
     <!-- Common declaration -->
     <meta charset="utf-8">
@@ -10,14 +11,15 @@
     <![endif]-->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/reveal.css" />
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" title="normal" href="css/projectstyle.css"/>
-    <link rel="alternate stylesheet" title="projector" href="css/projectstyle_projection.css"/>
-    <link rel="stylesheet" href="css/projectstyle_print.css" media="print"/>
-    
+    <link href='https://fonts.googleapis.com/css?family=Erica+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" title="normal" href="css/projectstyle.css" />
+    <link rel="alternate stylesheet" title="projector" href="css/projectstyle_projection.css" />
+    <link rel="stylesheet" href="css/projectstyle_print.css" media="print" />
+
 
     <!-- Java Script -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -79,9 +81,9 @@
                 event.preventDefault();
                 var filepath = $(this).attr("href");
                 var value = $(this).attr("data-menu-id");
-                
-                var loadpage = filepath + ("?"+value) + " #" + value + " > *";
-                
+
+                var loadpage = filepath + ("?" + value) + " #" + value + " > *";
+
                 $("#dynamicload").load(loadpage);
 
                 //reset active inactive here
@@ -97,14 +99,14 @@
                     $("#triggerexercise").attr("class", "btn btn-success");
 
                     // Pre-load quiz page in advance using value variable
-                    loadpage = "quizs/" + (value + "_quiz.html") + ("?"+value) + " #" + value + " > *";
-                    
+                    loadpage = "quizs/" + (value + "_quiz.html") + ("?" + value) + " #" + value + " > *";
+
                     $('#dynamicquiz').empty();
                     $("#dynamicquiz").load(loadpage);
 
                     // Pre-load exercise
-                    loadpage = "exercises/" + (value + "_exercise.html") + ("?"+value) + " #" + value + " > *";
-                    
+                    loadpage = "exercises/" + (value + "_exercise.html") + ("?" + value) + " #" + value + " > *";
+
                     $('#dynamicexercise').empty();
                     $('#dynamicexercise').load(loadpage);
                 } else {
@@ -114,12 +116,13 @@
                 }
             });
         });
+
     </script>
     <title>Comp1950 : Home</title>
 </head>
 
 <body>
-    <div id="slidequiz">  
+    <div id="slidequiz">
         <form class="form-horizontal" style="padding-left: 30px">
             <div id="dynamicquiz">
                 <div class="panel panel-default">
@@ -138,7 +141,7 @@
             </div>
         </form>
     </div>
-    <div id="slidemenu">     
+    <div id="slidemenu">
         <div class="list-group" style="margin-left: 50px">
             <a href="#" class="list-group-item list-group-item-success disabled">Contents</a>
             <a href="index.html" data-menu-id="dynamicload" class="list-group-item active">&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
@@ -149,15 +152,26 @@
             <a href="lectures/lecture3.html" data-menu-id="lecture3" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Lecture 3 - CSS Layout</a>
             <a href="#" class="list-group-item list-group-item-success disabled">Exercises</a>
             <a href="exercises/all_exercises.html" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;All exercises</a>
-             <a href="http://validator.w3.org/check?uri=referer" class="list-group-item" id="validate">Validate</a>
+            <a href="http://validator.w3.org/check?uri=referer" class="list-group-item" id="validate">Validate</a>
             <button type="button" id="cancelmenu" class="btn btn-danger" style="margin-top: 20px">Cancel</button>
         </div>
     </div>
-    
+
     <!-- Banner goes here, Animated letters are here -->
     <header>
         <div id="banner">
-            <h2 style="color:white;">BCIT Comp-1950: Intermediate Web Design and Development</h2>
+            <a id="top"></a>
+            <div class="container">
+                <div class="box">
+
+                    <span class="flip">B</span>
+                    <span class="flip">C</span>
+                    <span class="flip">I</span>
+                    <span class="flip">T</span>
+                </div>
+            </div>
+
+            <h5>Comp-1950: Intermediate Web Design and Development</h5>
         </div>
     </header>
     <main>
@@ -186,8 +200,8 @@
                         </ul>
                         <div id="myTabContent" class="tab-content">
                             <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
-                               <img src="img/html5css3.jpg" width="344" height="176" alt="HTML5+JS+CSS3">
-                          
+                                <img src="img/html5css3.jpg" width="344" height="176" alt="HTML5+JS+CSS3">
+
                                 <p><strong>COMP 1950</strong> follows on from <a href="http://www.bcit.ca/study/courses/comp1850">COMP 1850</a> in more depth and introduces new topics and techniques for developing effective web sites.</p>
 
                                 <p>Students will gain a deeper understanding of HTML and CSS. Topics will include: Current and emerging trends in HTML, detailed use of CSS for layout and presentation, an introduction to JavaScript frameworks such as jQuery, how to leverage Server Side Includes (SSI) for re-usable code, and working with Content Management Systems.</p>
