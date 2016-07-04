@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document by Susan Bates */
+
+#wrapper {
+margin: 0 auto; 
+width: 1200px; 
+min-height: 768px;
+	
+}
+
+header {
+height: 150px;
+width: 1200px; 
+background-color: #0c6998;
+margin: 0 auto;
+border-radius: 5px;
+	
+}
+
+#logo { 
+width: 560px;
+float: left;
+}
+nav  { 
+float: right; 
+} 
+
+nav ul li {
+text-decoration: none; 
+display: inline-block;
+font-size: 1em;
+font-family: 'Michroma', sans-serif;
+padding: 1em; 
+color: #FFF;
+/*font-weight: 600;*/	
+}
+nav ul li a {
+color: #fff;
+text-decoration:none;
+
+}
+.active {
+/*border-bottom: solid 1px #FFFFFF;*/	
+background-color: #72b4d5;
+border-radius: 5px;
+padding: 6px;
+color:  #0c6998;
+font-weight: bold;
+}
+
+nav ul li a:hover {
+color: #f4dc00;	
+}
+
+div ul {
+padding-left: 20px;
+		
+}
+
+/*div ul.navigation {
+margin-top: -130px;	
+}*/
+#container {
+width: 1200px;
+	
+}
+
+
+.desc li 
+{padding-right: 40px;
+}
+#col-1 {
+width: 560px;
+font-family: 'Sorts Mill Goudy', serif;
+padding: 20px;
+float: left;
+display: inline-block;	
+}
+.Jeff {
+margin-top: 25px;	
+}
+h2.blue {
+font-size: 28px; 
+color: #0c6998;
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+#col-2 {
+width: 560px;
+padding: 20px;
+font-family: 'Sorts Mill Goudy', serif;
+float: left;	
+display: inline-block;		
+}
+
+
+footer {
+	clear: both; 
+	height: 50px;
+	width:1200px;
+	margin: 0 auto;
+}
+.footer {
+	font-family:'Michroma', sans-serif;
+	color: #0c6998;
+	font-size: 16px;
+	padding-top: 20px;
+}
