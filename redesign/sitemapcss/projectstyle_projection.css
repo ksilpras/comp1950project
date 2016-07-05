@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+body {
+font-family: 'Raleway', sans-serif;
+color:#015a76!important;
+}
+
+#banner {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 25px 35px 5px 65px;
+    position: relative;
+ /*   border: 1px solid black;*/
+    
+   /* background: rgb(11, 32, 78);
+    background: -moz-linear-gradient(0deg, rgb(11, 32, 78) 9%, rgb(255, 255, 255) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(11, 32, 78) 9%, rgb(255, 255, 255) 100%);
+    background: -o-linear-gradient(0deg, rgb(11, 32, 78) 9%, rgb(255, 255, 255) 100%);
+    background: -ms-linear-gradient(0deg, rgb(11, 32, 78) 9%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(90deg, rgb(11, 32, 78) 9%, rgb(255, 255, 255) 100%);*/
+	
+	background:-webkit-linear-gradient(90deg, rgb(51, 122, 183) 0%, rgb(0, 145, 190) 60%);
+	background:-o-linear-gradient(90deg, rgb(51, 122, 183) 0%, rgb(0, 145, 190) 60%);
+	background:-moz-linear-gradient(90deg, rgb(51, 122, 183) 0%, rgb(0, 145, 190) 60%);
+	background:linear-gradient(90deg, rgb(51, 122, 183) 0%, rgb(0, 145, 190) 60%);
+}
+div#banner>h2 {
+	text-shadow:-3px 4px 8px #054552;	
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+    /*border: 1px solid gray;*/
+    /*height: 450px;*/
+    /*border-radius: 5px 5px 15px 15px;*/
+    position: relative;
+	font-size:16px;
+	color:#015a76!important;
+}
+
+main>a {
+	color: #f2672c!important; 
+	
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+div#home>img {
+margin: 15px 0;
+}
+.panel-heading { 
+background-color: #efc84c!important;
+}
+.label-default {
+background-color: #f2672c!important;	
+}
+.panel-body {
+background-color: rgba(241,191,37,.3);	
+}
+
+/*-------------------------------*/
+/* Override style from bootstrap */
+/*-------------------------------*/
+h1 {
+    margin: .10em 0;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.onecolumn {
+    padding: 15px;
+    
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+}
+
+.twocolumn {
+    padding: 15px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+    
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid lightblue;
+}
+
+.threecolumn {
+    padding: 15px;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+    
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid lightblue;
+}
+
+.list-group-item.disabled,
+.list-group-item.disabled:focus,
+.list-group-item.disabled:hover {
+    color: white!important;
+    cursor: not-allowed;
+    border: 1px solid #0090bd;
+    background-color: #0090bd
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #f0c84e!important;
+    border-color: #f0c84e!important;
+    color: #fff;
+    z-index: 2;
+}
+.list-group-item {
+   background-color: #fbedc0;
+    border: fbedc0;
+	color: #0090bd!important;
+	font-weight: 600;
+}
+.list-group-item:focus {
+	background-color:white!important;
+}
+
+#validate {
+background-color:#5cb85c;
+color: white!important;
+}
+.btn-danger {
+background-color: #f2672c!important;	
+}
+img { 
+border-radius: 5px!important;
+}
+
+img.float {
+	
+	margin: 20px 0;
+	margin-right: 100px;
+	
+}
+
+img.float-left {
+	float: left; 
+}
+
+ul.agenda, p.agenda  {
+padding-top: 30px;	
+}
+ul.agenda li  {
+	line-height: 1.5;
+}
+
+img.padding {
+	margin-right: 20px!important;
+}
+
+a:hover {
+background-color:#A6DAF7!important;	
+}
+
+#beer {
+	margin-right: 30px;
+}
+	
+	
